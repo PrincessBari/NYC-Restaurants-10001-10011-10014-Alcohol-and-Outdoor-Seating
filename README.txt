@@ -17,7 +17,7 @@
 # METHOD:
 # 1) I used my python script, nyc_open_rests_api.py, to make an API call to 
 # https://data.cityofnewyork.us/resource/pitm-atqc.json?$$app_token=[ENTER_APP_TOKEN] for zip codes 10001, 
-# 10011, and 10014, which created a # json file, nyc_open_rests_2.json
+# 10011, and 10014, which created a json file, nyc_open_rests_2.json
 # 2) Then, I used the python script, json_to_csv.py, to pull just the restaurant names and their 
 # respective addresses from the json file and write it all into a csv file
 # 3) Then, I used my R script, geocode_nyc_rests_10001.R, to geocode all the locations into latitudes 
@@ -40,5 +40,3 @@
 # 4) Spacing issues within the address such as "2W 32nd St" instead of "2 W 32nd St"
 # 5) duplicate entries, such as Hanbat Restaurant's appearing twice
 # 4) permanently closed restaurants
-
-### Pretty cool up-to-date open restaurants dashboard: https://experience.arcgis.com/experience/ba953db7d541423a8e67ae1cf52bc698
