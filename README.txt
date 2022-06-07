@@ -17,15 +17,15 @@
 # METHOD:
 # 1) I used my python script, nyc_open_rests_api.py, to make an API call to 
 # https://data.cityofnewyork.us/resource/pitm-atqc.json?$$app_token=[ENTER_APP_TOKEN] for zip codes 10001, 
-# 10011, and 10014, which created a json file, nyc_open_rests_2.json
+# 10011, and 10014, and created three json files: nyc_open_rests_10001.json, nyc_open_rests_10011.json, nyc_open_rests_10014.json
 # 2) Then, I used the python script, json_to_csv.py, to pull just the restaurant names and their 
 # respective addresses from the json file and write it all into a csv file
-# 3) Then, I used my R script, geocode_nyc_rests_10001.R, to geocode all the locations into latitudes 
-# and longitudes and create a csv file, w_village_10014_rests_w_lats_longs
+# 3) Then, I used my R script, geocode_nyc_rests_10001_copy.R, to geocode all the locations into latitudes 
+# and longitudes and created three csv files: chelsea_10001_rests_w_lats_longs.csv, chelsea_10011_rests_w_lats_longs.csv, w_village_10014_rests_w_lats_longs
 # 4) Then, I brought the file into OpenRefine and fixed issues with the addresses. See below under 
 # "ISSUES" for all instances that required editing. 
-# 5) Then, I combined all data from all three zip codes into one csv file by copy and pasting, and 
-# went line by line and deleted restaurants that were permanently closed as well as duplicate addresses
+# 5) Then, I combined all data from all three zip codes into one csv file by, 10001_10011_10014_restos_with_lats_longs - data cleaned.csv,
+# copy and pasting, and went line by line and deleted restaurants that were permanently closed as well as duplicate addresses
 # 6) Then, I imported the file into Tableau Public and created a map: 
 # https://public.tableau.com/app/profile/sara.kim3820/viz/NearbyRestaurantswOutdoorSeatingAlcohol/100011001110014. Only certain restaurant names appear 
 # initially when zoomed out and more show up as you zoom in. It's best to click on each dot to 
