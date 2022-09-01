@@ -34,7 +34,7 @@
 # ISSUES
 # Data had to be cleaned for 
 # 1) incorrect addresses, such as some whose street number appear twice as in "12 12 32nd St" 
-# instead of "12 43nd St"
+# instead of "12 32nd St"
 # 2) lack of "E" (East) or "W" (West) before the street name
 # 3) lack of "St" or "Ave" at the end of the address
 # 4) Spacing issues within the address such as "2W 32nd St" instead of "2 W 32nd St"
